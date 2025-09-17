@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="code.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Название вашего сайта</title>
+    <meta name="description" content="Краткое описание главной страницы вашего сайта">
+    <link rel="icon" href="assets/pic.ico" type="image/x-icon">
+    <button class="theme-toggle" type="button" aria-pressed="false">
+            🌙 / ☀️
+        </button>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="header__logo">Логотип или название сайта</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Уникальное основное содержимое страницы -->
+    <main class="main container">
+        <section id="home" class="content-section">
+            <h1>Добро пожаловать на наш сайт!</h1>
+            <p class="lead">
+                Мы — команда профессионалов, создающая современные веб-решения для бизнеса любого масштаба. 
+                От лендингов до сложных корпоративных порталов — мы реализуем ваши идеи в цифровом пространстве.
+            </p>
+            <a href="#services" class="nav__link">Узнать о наших услугах</a>
+        </section>
+
+        <!-- Секция 1 с якорем -->
+        <section id="services" class="content-section">
+            <h2 class="section__title">Наши услуги</h2>
+            <p>Описание предоставляемых услуг...</p>
+            <a href="#contacts" class="nav__link">Связаться с нами</a>
+        </section>
+
+        <!-- Секция 2 с якорем -->
+       <section id="portfolio" class="content-section">
+    <h2 class="section__title">Портфолио</h2>
+    <p>Примеры наших работ...</p>
+
+    <div class="portfolio-layout">
+        <div class="portfolio-text">
+            <!-- Текст о проекте -->
+        </div>
+        <div class="portfolio-video">
+            <iframe
+                src="https://rutube.ru/play/embed/68c39a93e98f73adec8051d31246dec5"
+                title="Видео о проекте"
+                allow="autoplay; encrypted-media; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+``
+
+        <!-- Секция 3 с якорем -->
+        <section id="contacts" class="content-section">
+            <h2 class="section__title">Контактная информация</h2>
+            <p>Наши контакты...</p>
+            <a href="contacts.html" class="nav__link">Подробнее</a>
+        </section>
+    </main>
+</body>
+</html>

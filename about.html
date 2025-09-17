@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="code.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/pic.ico" type="image/x-icon">
+    <title>О нас - Название вашего сайта</title>
+    <meta name="description" content="Узнайте больше о нашей компании и истории">
+     <link rel="stylesheet" href="css/style.css">
+     <button class="theme-toggle" type="button" aria-pressed="false">
+            🌙 / ☀️
+        </button>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="header__logo">Логотип или название сайта</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="about.html" class="nav__link nav__link--active">О нас</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero-секция с фоном и градиентом -->
+<section class="hero">
+    <div class="hero__overlay">
+        <div class="container hero__content">
+            <h1>О нашей компании</h1>
+            <p>Мы создаем будущее уже сегодня. Узнайте, как мы это делаем.</p>
+        </div>
+    </div>
+</section>
+
+<main class="main container">
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html" class="breadcrumbs__link">Главная</a> →
+        <span class="breadcrumbs__current">О нас</span>
+    </nav>
+
+    <section class="content-section">
+        <h2 class="section__title">Наша история</h2>
+        <p>Текст о том, как все начиналось...</p>
+    </section>
+    
+    <section class="content-section">
+        <h2 class="section__title">Наша команда</h2>
+        <p>Текст о команде...</p>
+
+        <!-- Responsive изображение — только одно, но с srcset/sizes -->
+        <figure class="responsive-image">
+            <img src="./assets/team-photo.jpg"
+                 srcset="./assets/team-photo.jpg 1x,
+                         ./assets/team-photo.jpg 2x"
+                 alt="Наша команда за работой"
+                 sizes="(max-width: 768px) 100vw, 800px"
+            >
+            <figcaption>Наша команда в офисе</figcaption>
+        </figure>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </div>
+    </footer>
+</body>
+</html>
